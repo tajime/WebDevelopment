@@ -10,7 +10,7 @@ Githubの使い方
         git push origin ブランチ名      (masterはメインブランチ)
 
     ・データを受け取る
-        
+        git pull
         
     ・ブランチの作り方
         git branch ブランチ名            ブランチを作る
