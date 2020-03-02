@@ -14,3 +14,7 @@ Githubの使い方
         git branch : 現存するブランチの確認
         git checkout ブランチ名 : 更新するブランチの選択
         
+    ・マージ方法
+        git checkout マージ先のブランチ名
+        git merge マージするブランチ名
+        git push origin マージ先のブランチ名
