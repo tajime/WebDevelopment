@@ -1,0 +1,42 @@
+.page-header{
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width:200px;
+}
+.SchoolMark__logo{
+    margin: 10px 0px;
+}
+.SchoolMark__logo img{
+    width: 180px;
+    height: auto;
+}
+.SchoolMark-name{
+    text-align: left;
+    margin: 0px 0px 25px 55px ;
+    color: orange;
+    font-family: "Tekton Pro Cond";
+}
+
+.page-header__lang button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: orange;
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+.page-header__lang{
+    margin: 10px 0px;
+}
