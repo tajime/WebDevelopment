@@ -1,9 +1,46 @@
 <!--問合せのページ-->
 <html lang="ja">
-    <head>
-        <title>school-index</title>
+
+<head>
+    <meta charset="utf-8">
+    <title>school-index</title>
+</head>
+
+<body>
+    <!--ヘッダー-->
+
+    <head class="page-header">
+        <img src="img/SchoolMark.png" alt="SchoolMark" width=60px hight=auto>
     </head>
-    <body>
-        
-    </body>
+    <!--メイン-->
+    <main class="page-main">
+        <h1>お問い合わせ</h1>
+        <p>本学に興味がある方はお気軽にお問い合わせください。必要事項をご入力いただきますと、本学の入学資料を送付いたします。</p>
+        <h2>電話番号</h2>
+        <p>348579347198237489123749182751263</p>
+        <h2>資料請求</h2>
+        <div class="form">
+            <firm action="" method="post">
+                <div class="form_name">
+                    <label for="name">Name：</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div class="form_mail">
+                    <label for="email">Email：</label>
+                    <input type="email" id="email" name="user_email">
+                </div>
+                <div class="form_msg">
+                    <label for="msg">Message：</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Send Message</button>
+                </div>
+            </firm>
+        </div>
+    </main>
+    <!--フッター-->
+    <footer class="page-footer"></footer>
+</body>
+
 </html>
