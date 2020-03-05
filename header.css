@@ -35,7 +35,7 @@
     border-radius: 10px;
     background-color: orange;
     background-image: linear-gradient(to top left, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2) 30%, rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
+    box-shadow: inset 2px 2px 3px rgba(168, 158, 158, 0.6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
 .page-header__lang {
@@ -43,16 +43,20 @@
 }
 
 .page-header__menu {
-    width: 120px;
-    margin: 10px 30px;
+    width: 160px;
+    margin: 0px 20px;
+    border-radius: 10px;
 }
 
 .menu {
+    width: 120;
+    margin: 20px 20px;
     font-size: 20px;
-    line-height: 60px;
+    line-height: 37px;
     text-decoration: underline;
     text-align-last: justify;
-    border: none;
-    -moz-text-align-last: justify;
 }
 .menu:hover {color:red;} /*カーソルが乗っているリンクの色*/
+.menu a{
+    margin: 0px 20px;
+}
