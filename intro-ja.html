@@ -4,13 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <title>school-index</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="style-ja.css">
 </head>
 
 <body>
     <!--ヘッダー-->
-    <header>
-
+    <header class="page-header">
+        <div class="page-header__SchoolMark">
+            <div class="SchoolMark__logo">
+                <img src="img/SchoolMark2.png" alt="SchoolMark">
+            </div>
+        </div>
+        <div class="page-header__lang">
+            <button class="lang-EN" type="button"onclick="en()">EN</button>
+            <button class="lang-JP" type="button"onclick="ja()">JP</button>
+            <button class="lang-FR" type="button"onclick="fr()">FR</button>
+        </div>
+        <nav class="page-header__menu">
+            <ol>
+                <li class="menu-index menu"id="header-menu-index"><a href="index-ja.html">ホーム</a></li>
+                <li class="menu-intro menu"id="header-menu-intro"><a href="intro-ja.html">学校紹介</a></li>
+                <li class="menu-content menu"id="header-menu-content"><a href="content-ja.html">教育内容</a></li>
+                <li class="menu-facility menu"id="header-menu-facility"><a href="facility-ja.html">学校設備</a></li>
+                <li class="menu-ex menu"id="header-menu-ex"><a href="entranceExamination-ja.html">入試</a></li>
+                <li class="menu-access menu"id="header-menu-access"><a href="access-ja.html">アクセス</a></li>
+            </ol>
+        </nav>
     </header>
     <!--main-->
     <main>
@@ -60,5 +81,5 @@
 
     </footer>
 </body>
-
+<script src="header.js"></script>
 </html>

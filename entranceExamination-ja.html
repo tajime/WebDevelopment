@@ -1,11 +1,40 @@
 <!--入試のページ-->
-<!DOCTYPE html>
-<html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>入学試験について</title>
-  </head>
-  <body>
+<html lang="ja">
+
+<head>
+  <meta lang="utf-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="style-ja.css">
+  <title>入学試験について</title>
+</head>
+
+<body>
+  <!--ヘッダー-->
+  <header class="page-header">
+    <div class="page-header__SchoolMark">
+      <div class="SchoolMark__logo">
+        <img src="img/SchoolMark2.png" alt="SchoolMark">
+      </div>
+    </div>
+    <div class="page-header__lang">
+      <button class="lang-EN" type="button" onclick="en()">EN</button>
+      <button class="lang-JP" type="button" onclick="ja()">JP</button>
+      <button class="lang-FR" type="button" onclick="fr()">FR</button>
+    </div>
+    <nav class="page-header__menu">
+      <ol>
+        <li class="menu-index menu" id="header-menu-index"><a href="index-ja.html">ホーム</a></li>
+        <li class="menu-intro menu" id="header-menu-intro"><a href="intro-ja.html">学校紹介</a></li>
+        <li class="menu-content menu" id="header-menu-content"><a href="content-ja.html">教育内容</a></li>
+        <li class="menu-facility menu" id="header-menu-facility"><a href="facility-ja.html">学校設備</a></li>
+        <li class="menu-ex menu" id="header-menu-ex"><a href="entranceExamination-ja.html">入試</a></li>
+        <li class="menu-access menu" id="header-menu-access"><a href="access-ja.html">アクセス</a></li>
+      </ol>
+    </nav>
+  </header>
+  <!--メイン-->
+  <main class="page-main">
     <h1>入学試験について</h1>
     <table border="1">
       <tr>
@@ -23,8 +52,8 @@
       <tr>
         <th>選考内容</th>
         <td>第1次選考:書類審査<br>
-            第2次選考:学力審査(200点満点(英語60分100点、数学60分100点))<br>
-            最終選考:面接</td>
+          第2次選考:学力審査(200点満点(英語60分100点、数学60分100点))<br>
+          最終選考:面接</td>
       </tr>
       <tr>
         <th>合格発表</th>
@@ -37,13 +66,18 @@
       <tr>
         <th>出願資格</th>
         <td>TOEIC600点以上もしくはTOEFL50点以上<br>
-            主要3科目(国、数、英)の成績が5段階表示で4以上<br>
-            Webによる学校説明会に本人が出席
+          主要3科目(国、数、英)の成績が5段階表示で4以上<br>
+          Webによる学校説明会に本人が出席
       </tr>
       <tr>
         <th>募集定員</th>
         <td>100人</td>
       </tr>
     </table>
-  </body>
+  </main>
+  <!--フッター-->
+  <footer class="page-footer"></footer>
+</body>
+<script src="header.js"></script>
+
 </html>
