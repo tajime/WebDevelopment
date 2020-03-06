@@ -17,6 +17,8 @@ if (result[0] == "index") {
     obj = document.getElementById("header-menu-ex");
 }else if(result[0] == "access"){
     obj = document.getElementById("header-menu-access");
+}else if(result[0] == "inquiry"){
+    obj = document.getElementById("header-menu-inquiry");
 }
 //色の指定
 obj.style.backgroundColor = "#ffdabf";
