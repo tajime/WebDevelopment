@@ -11,24 +11,16 @@
     white-space: nowrap;
     scrollbar-width: thin;
 }
-.page-header::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-.SchoolMark__logo {
-    /*margin: 10px 0px;*/
-}
 
+.page-header::-webkit-scrollbar {
+    width: 0px;
+}
+.page-header__SchoolMark{
+    margin: 10px;
+}
 .SchoolMark__logo img {
     width: 180px;
     height: auto;
-}
-
-.SchoolMark-name {
-    text-align: left;
-    /*margin: 0px 0px 25px 55px;*/
-    color: orange;
-    font-family: "Tekton Pro Cond";
 }
 
 .page-header__lang button {
@@ -41,11 +33,18 @@
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
     border: 2px solid orange;
-    background-color: rgb(255, 198, 92);
+    /*background-color: rgb(255, 198, 92);*/
+    background-size: cover;
+    background-position: center;
 }
-
-.page-header__lang {
-    /*margin: 10px 0px;*/
+.lang-EN{
+    background-image: url("img/nationalFlag/EN.png");
+}
+.lang-JP{
+    background-image: url("img/nationalFlag/JA.png");
+}
+.lang-FR{
+    background-image: url("img/nationalFlag/FR.png");
 }
 
 .page-header__menu {
@@ -55,14 +54,15 @@
 }
 
 .menu {
+    /*ボタンの幅*/
+    margin: 30px 20px;
     border-radius: 8px;
-    /*margin: 20px 0px;*/
     font-size: 20px;
     line-height: 37px;
     text-decoration: underline;
     text-align-last: justify;
 }
-.menu a:hover {color:red;} /*カーソルが乗っているリンクの色*/
-.menu a{
-    /*margin: 0px 25px;*/
+
+.menu a:hover {
+    color: red;
 }
