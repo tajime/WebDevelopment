@@ -38,13 +38,13 @@
     background-position: center;
 }
 .lang-EN{
-    background-image: url("img/nationalFlag/EN.png");
+    background-image: url("../img/nationalFlag/EN.png");
 }
 .lang-JP{
-    background-image: url("img/nationalFlag/JA.png");
+    background-image: url("../img/nationalFlag/JA.png");
 }
 .lang-FR{
-    background-image: url("img/nationalFlag/FR.png");
+    background-image: url("../img/nationalFlag/FR.png");
 }
 
 .page-header__menu {
