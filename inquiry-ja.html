@@ -1,9 +1,89 @@
 <!--問合せのページ-->
 <html lang="ja">
-    <head>
-        <title>school-index</title>
-    </head>
-    <body>
-        
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style-ja.css">
+    <title>school-index</title>
+</head>
+
+<body>
+    <!--ヘッダー-->
+    <header class="page-header">
+        <div class="page-header__SchoolMark">
+            <div class="SchoolMark__logo">
+                <img src="img/SchoolMark2.png" alt="SchoolMark">
+            </div>
+        </div>
+        <div class="page-header__lang">
+            <button class="lang-EN" type="button"onclick="en()">EN</button>
+            <button class="lang-JP" type="button"onclick="ja()">JP</button>
+            <button class="lang-FR" type="button"onclick="fr()">FR</button>
+        </div>
+        <nav class="page-header__menu">
+            <ol>
+                <li class="menu-index menu"id="header-menu-index"><a href="index-ja.html">ホーム</a></li>
+                <li class="menu-intro menu"id="header-menu-intro"><a href="intro-ja.html">学校紹介</a></li>
+                <li class="menu-content menu"id="header-menu-content"><a href="content-ja.html">教育内容</a></li>
+                <li class="menu-facility menu"id="header-menu-facility"><a href="facility-ja.html">学校設備</a></li>
+                <li class="menu-ex menu"id="header-menu-ex"><a href="entranceExamination-ja.html">入試</a></li>
+                <li class="menu-access menu"id="header-menu-access"><a href="access-ja.html">アクセス</a></li>
+            </ol>
+        </nav>
+    </header>
+    <!--メイン-->
+    <main class="page-main">
+        <div>
+            <h1>お問い合わせ</h1>
+        </div>
+        <div>
+            <p>本学に興味がある方はお気軽にお問い合わせください。必要事項をご入力いただきますと、本学の入学資料を送付いたします。</p>
+            <div>
+                <h2>電話番号</h2>
+                <p>348579347198237489123749182751263</p>
+            </div>
+            <div>
+                <h2>資料請求</h2>
+                <div class="form">
+                    <form name="fome1" action="" method="post">
+                        <div class="form_name">
+                            <label for="name">Name：</label>
+                            <input type="text" id="name" name="user_name" placeholder="ロンドン　太郎">
+                        </div>
+                        <div class="form_mail">
+                            <label for="email">Email：</label>
+                            <input type="email" id="email" name="user_email" placeholder="XXXX@YYY.ZZZ">
+                        </div>
+                        <div class="form_msg">
+                            <label for="msg">Message：</label>
+                            <textarea id="msg" name="user_message" placeholder="Please write freely"></textarea>
+                        </div>
+                        <div class="form_button">
+                            <input type="button" id="btn" value="Send Message" onclick="sendMessage()">
+                            <script type="text/javascript">
+                                function sendMessage() {
+                                    var name = document.getElementById('name').value;
+                                    var email = document.getElementById('email').value;
+                                    var msg = document.getElementById('msg').value;
+                                    /*--デバック用コンソール--
+                                    console.log(name);
+                                    console.log(email);
+                                    console.log(msg);
+                                    -------------------------*/
+                                    var message = String("name : " + name + "\nEmail : " + email + "\n\n---message---\n" + msg + "\n----------------\n" + "\n以上の内容で送信しました。");
+                                    alert(message);
+                                }
+                            </script>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--フッター-->
+    <footer class="page-footer"></footer>
+</body>
+<script src="header.js"></script>
 </html>
