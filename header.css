@@ -7,10 +7,16 @@
     height: 100%;
     width: 200px;
     border-right: 3px solid orange;
+    overflow: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
 }
-
+.page-header::-webkit-scrollbar {
+    width: 10px;
+  }
+  
 .SchoolMark__logo {
-    margin: 10px 0px;
+    /*margin: 10px 0px;*/
 }
 
 .SchoolMark__logo img {
@@ -20,7 +26,7 @@
 
 .SchoolMark-name {
     text-align: left;
-    margin: 0px 0px 25px 55px;
+    /*margin: 0px 0px 25px 55px;*/
     color: orange;
     font-family: "Tekton Pro Cond";
 }
@@ -28,7 +34,7 @@
 .page-header__lang button {
     border: 0;
     line-height: 2.5;
-    padding: 0 20px;
+    padding: 0 15px;
     font-size: 0.95rem;
     text-align: center;
     color: #fff;
@@ -39,18 +45,18 @@
 }
 
 .page-header__lang {
-    margin: 10px 0px;
+    /*margin: 10px 0px;*/
 }
 
 .page-header__menu {
     width: 160px;
-    margin: 0px 20px;
+    margin: auto;
     border-radius: 10px;
 }
 
 .menu {
     border-radius: 8px;
-    margin: 20px 0px;
+    /*margin: 20px 0px;*/
     font-size: 20px;
     line-height: 37px;
     text-decoration: underline;
@@ -58,5 +64,5 @@
 }
 .menu a:hover {color:red;} /*カーソルが乗っているリンクの色*/
 .menu a{
-    margin: 0px 25px;
+    /*margin: 0px 25px;*/
 }
