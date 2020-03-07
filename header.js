@@ -24,17 +24,17 @@ if (result[0] == "index") {
 obj.style.backgroundColor = "#ffdabf";
 
 function en() {
-    var thisURL = result[0]+'-en.html'
+    var thisURL = '../english/'+result[0]+'-en.html'
     window.location.href = thisURL; // 通常の遷移
     window.open(thisURL, '_blank'); // 新しいタブを開き、ページを表示
 }
 function ja(){
-    var thisURL = result[0]+'-ja.html'
+    var thisURL = '../japanese/'+result[0]+'-ja.html'
     window.location.href = thisURL; // 通常の遷移
     window.open(thisURL, '_blank'); // 新しいタブを開き、ページを表示
 }
 function fr(){
-    var thisURL = result[0]+'-fr.html'
+    var thisURL = '../french/'+result[0]+'-fr.html'
     window.location.href = thisURL; // 通常の遷移
     window.open(thisURL, '_blank'); // 新しいタブを開き、ページを表示
 }
