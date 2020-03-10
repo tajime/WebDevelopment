@@ -1,0 +1,89 @@
+.page-main__header{
+  padding-top: 25;
+  padding-bottom: 25;
+  background-image: url("../img/facility/office-black.png");
+  background-size:cover;
+  background-position: center;
+  margin-left: -10;
+  border-bottom: solid 10px orange;
+}
+
+.page-submain__header{
+  text-align:center;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 25 0;
+  margin-left: 25;
+  margin-right: 25;
+  font-weight: bold;
+  border: solid 2px #ffffff;
+}
+
+.overview{
+  letter-spacing: 2px;
+  background:#ffffff;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.upbringing{
+  letter-spacing: 2px;
+  background: rgb(255, 246, 235);
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.international{
+  letter-spacing: 2px;
+  background:#ffffff;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.student{
+  letter-spacing: 2px;
+  background: rgb(255, 246, 235);
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.history{
+  letter-spacing: 2px;
+  background:#ffffff;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.club{
+  letter-spacing: 2px;
+  background: rgb(255, 246, 235);
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.event{
+  letter-spacing: 2px;
+  background:#ffffff;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.contents-head{
+  font-size: 90%;
+  padding-bottom: 40;
+  padding-top: 30;
+}
