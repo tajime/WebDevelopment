@@ -19,8 +19,17 @@
   border: solid 2px #ffffff;
 }
 
+.history{
+  letter-spacing: 3px;
+  background:rgb(255, 246, 235);;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
 .overview{
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   background:#ffffff;
   text-align:center;
   margin-left: -10;
@@ -29,7 +38,7 @@
 }
 
 .upbringing{
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   background: rgb(255, 246, 235);
   text-align:center;
   margin-left: -10;
@@ -38,7 +47,7 @@
 }
 
 .international{
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   background:#ffffff;
   text-align:center;
   margin-left: -10;
@@ -47,35 +56,56 @@
 }
 
 .student{
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   background: rgb(255, 246, 235);
   text-align:center;
-  margin-left: -10;
+  margin:-10;
   padding-top: 20;
   padding-bottom: 50;
+  left: 50%;
 }
-
-.history{
-  letter-spacing: 2px;
-  background:#ffffff;
-  text-align:center;
-  margin-left: -10;
-  padding-top: 20;
-  padding-bottom: 50;
+.table-student{
+  width: 50%;
+  text-align: center;
+  border-collapse:collapse;
+  border: 1px solid;
+  margin: auto;
+}
+.table-head{
+  background: #b5fbff;
+  border-collapse:collapse;
+  border: 1px solid;
+}
+.table-head td{
+  border-collapse:collapse;
+  border: 1px solid;
+}
+.table-grade{
+  background: #ffd0b5;
+  border-collapse:collapse;
+  border: 1px solid;
+}
+.table-number{
+  background: #ffffff;
+  border-collapse:collapse;
+  border: 1px solid;
 }
 
 .club{
-  letter-spacing: 2px;
-  background: rgb(255, 246, 235);
+  letter-spacing: 3px;
+  background: #ffffff;
   text-align:center;
   margin-left: -10;
   padding-top: 20;
   padding-bottom: 50;
 }
+.club-head{
+  padding-top: 20;
+}
 
 .event{
-  letter-spacing: 2px;
-  background:#ffffff;
+  letter-spacing: 3px;
+  background:rgb(255, 246, 235);;
   text-align:center;
   margin-left: -10;
   padding-top: 20;
