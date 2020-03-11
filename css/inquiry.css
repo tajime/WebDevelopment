@@ -1,9 +1,9 @@
 .page-main__header{
   padding-top: 25;
   padding-bottom: 25;
-  background-image: url("../img/facility/office-black.png");
+  background-image: url("../img/content/otoiawase.jpg");
   background-size:cover;
-  background-position: center;
+  background-position: 40px;
   margin-left: -10;
   border-bottom: solid 10px orange;
 }
