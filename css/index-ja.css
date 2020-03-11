@@ -1,5 +1,4 @@
 .page-main__header {
-    margin: 0 -10px;
     border-bottom: 5px solid orange;
 }
 
@@ -25,7 +24,8 @@
     text-shadow: 2px 2px #fff, 5px 5px rgba(0, 188, 212, 0.4);
     margin: 0 0 70px 0;
 }
-
+.inner{
+}
 .page-main__content {
     margin: auto;
     width: 90%;
@@ -49,7 +49,6 @@
 
 .content-contents {
     transform: translate(8.33%,0%);
-    margin: auto;
     text-align: center;
     width: 50%;
 }
@@ -60,4 +59,20 @@
     background:
       linear-gradient(to top right, rgba(255,255,255,0) 50%, #ffa500 50%) no-repeat top left/50.1% 100%,
       linear-gradient(to top left, rgba(255,255,255,0) 50%, #ffa500 50%) no-repeat top right/50.1% 100%;
+}
+.news div{
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: left;
+    margin: 15px 30px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+.ccc div{
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: left;
+    margin: 15px 30px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+.news div p,
+.ccc div p{
+    margin: 0 10px;
 }
