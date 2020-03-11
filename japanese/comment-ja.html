@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/style-ja.css">
-    <title>ホーム</title>
+    <title>コメント</title>
 </head>
 
 <body>
@@ -36,7 +36,39 @@
         </nav>
     </header>
     <!--メイン-->
-    <main class="page-main"></main>
+    <main class="page-main">
+        <div class="form">
+            <form name="form" action="content-ja.html" method="POST">
+                <div class="form_nickname">
+                    <label for="nickname">NickName：</label>
+                    <input type="text" required id="nickname" name="user_nickname" placeholder="ロンドン　太郎">
+                </div>
+                <div class="form_comment">
+                    <label for="comment">Comment：</label>
+                    <textarea id="comment" required name="user_comment" placeholder="Please write freely"></textarea>
+                </div>
+                <div class="form_button">
+                    <input type="submit" id="btn" value="Send Comment" onclick="sendComment()">
+                    <script type="text/javascript">
+                        function sendComment() {
+                            var nickname = document.getElementById('nickname').value;
+                            var comment = document.getElementById('comment').value;
+                            /*--デバック用コンソール----
+                            console.log(nickname);
+                            console.log(comment);
+                            -------------------------*/
+                            if (nickname == "" || comment == "") {
+                                var message = String("NickNameとCommentは必須項目です。");
+                            } else {
+                                var message = String("name : " + nickname + "\n---comment---\n" + comment + "\n----------------\n" + "\n以上の内容で送信しました。");
+                            }
+                            alert(message);
+                        }
+                    </script>
+                </div>
+            </form>
+        </div>
+    </main>
     <!--フッター-->
     <footer class="page-footer"></footer>
 </body>
