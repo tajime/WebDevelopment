@@ -25,7 +25,6 @@
   margin-left: -10;
   padding-top: 20;
   padding-bottom: 50;
-
 }
 
 .overview{
@@ -88,7 +87,7 @@
 }
 
 .club{
-  background: #ffffff;
+  /*background: #ffffff;*/
   text-align:center;
   margin-left: -10;
   padding-top: 20;
@@ -96,6 +95,18 @@
 }
 .club-head{
   padding-top: 20;
+}
+.sports-picture{
+  background-image: url("../img/content/baseball.jpg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top 250px left 40px;
+}
+.non-sports-picture{
+  background-image: url("../img/content/band.jpg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom 50px right 40px;
 }
 
 .event{
