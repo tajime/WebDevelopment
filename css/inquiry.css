@@ -1,0 +1,41 @@
+.page-main__header{
+  padding-top: 25;
+  padding-bottom: 25;
+  background-image: url("../img/facility/office-black.png");
+  background-size:cover;
+  background-position: center;
+  margin-left: -10;
+  border-bottom: solid 10px orange;
+}
+
+.page-submain__header{
+  text-align:center;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 25 0;
+  margin-left: 25;
+  margin-right: 25;
+  font-weight: bold;
+  border: solid 2px #ffffff;
+}
+
+.margin-left{
+  margin-left: 10;
+}
+
+.text-top{
+  padding: 20px;
+  font-size: 90%
+}
+
+.phone-number{
+  padding: 20px;
+  padding-bottom: 0px;
+}
+.phone-number h2{
+
+}
+
+.siryo-seikyu-{
+  padding: 20px;
+}
