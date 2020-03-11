@@ -1,0 +1,89 @@
+.inner{
+    background-color: rgb(255, 255, 226);
+}
+.page-main__content{
+    width: 98%;
+    margin: auto;
+}
+.page-main__header {
+    padding-top: 25;
+    padding-bottom: 25;
+    background-image: url("../img/content/e-business.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 10px orange;
+}
+
+.page-submain__header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 25 0;
+    margin-left: 25;
+    margin-right: 25;
+    font-weight: bold;
+    border: solid 2px #ffffff;
+}
+
+.intro-section__block {
+    display: flex;
+    height: 400px;
+  }
+  
+  .intro-section__block > * {
+    width: 50%;
+  }
+
+/* 偶数番目の場合、横並びを反転 */
+
+.intro-section__block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* 各画像を設定 */
+
+.intro-section__block:nth-child(1) .intro-section__img-area {
+    background-image: url("../img/content/text.jpg");
+}
+
+.intro-section__block:nth-child(2) .intro-section__img-area {
+    background-image: url("../img/content/law.jpg");
+}
+
+.intro-section__block:nth-child(3) .intro-section__img-area {
+    background-image: url("../img/content/marketing.jpg");
+}
+.intro-section__block:nth-child(4) .intro-section__img-area {
+    background-image: url("../img/content/finance.jpg");
+}
+
+.intro-section__block:nth-child(5) .intro-section__img-area {
+    background-image: url("../img/content/prog.jpg");
+}
+
+.intro-section__block:nth-child(6) .intro-section__img-area {
+    background-image: url("../img/content/e-business.jpg");
+}
+
+/* 画像エリア */
+
+.intro-section__img-area {
+    background: center center no-repeat;
+    background-size: cover;
+}
+
+/* 文章エリア */
+
+.intro-section__txt-area {
+    box-sizing: border-box;
+    color: #000;
+    padding: 20px;
+}
+
+.intro-section__contact {
+    padding: 100px 0;
+}
+
+.zu {
+    width: 100%;
+}
