@@ -26,6 +26,7 @@
   margin-left: -10;
   padding-top: 20;
   padding-bottom: 50;
+
 }
 
 .overview{
@@ -116,4 +117,15 @@
   font-size: 90%;
   padding-bottom: 40;
   padding-top: 30;
+}
+
+.effect-fade {
+　opacity : 0;
+　transform : translate(0, 45px);
+　transition : all 300ms;
+}
+
+.effect-fade.effect-scroll {
+　opacity : 1;
+　transform : translate(0, 0);
 }
