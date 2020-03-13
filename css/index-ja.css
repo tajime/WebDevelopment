@@ -1,3 +1,6 @@
+.main-header__inner{
+    background-image: url("../img/top.jpg");
+}
 .page-main__header {
     border-bottom: 5px solid orange;
 }
@@ -14,7 +17,7 @@
 
 .page-main__header1 {
     font-size: 45px;
-    margin: 70px 0 0 0;
+    padding: 70px 0 0 0;
 }
 
 .page-main__header2 {
@@ -24,7 +27,9 @@
     text-shadow: 2px 2px #fff, 5px 5px rgba(0, 188, 212, 0.4);
     margin: 0 0 70px 0;
 }
-.inner{
+.main-content__inner{
+    background-image: url("../img");
+    background-size: 50%;
 }
 .page-main__content {
     margin: auto;
@@ -64,13 +69,15 @@
     background-color: rgba(255, 255, 255, 0.85);
     text-align: left;
     margin: 15px 30px;
-    border-bottom: 1px solid rgb(85, 85, 85);
+    border-bottom: 1px solid rgb(141, 141, 141);
+    border-top: 1px solid rgb(141, 141, 141);
 }
 .ccc div{
     background-color: rgba(255, 255, 255, 0.85);
     text-align: left;
     margin: 15px 30px;
-    border-bottom: 1px solid rgb(85, 85, 85);
+    border-bottom: 1px solid rgb(141, 141, 141);
+    border-top: 1px solid rgb(141, 141, 141);
 }
 .news div p,
 .ccc div p{
