@@ -1,6 +1,7 @@
-.main-header__inner{
+.main-header__inner {
     background-image: url("../img/top.jpg");
 }
+
 .page-main__header {
     border-bottom: 5px solid orange;
 }
@@ -27,10 +28,13 @@
     text-shadow: 2px 2px #fff, 5px 5px rgba(0, 188, 212, 0.4);
     margin: 0 0 70px 0;
 }
-.main-content__inner{
-    background-image: url("../img");
-    background-size: 50%;
+
+.main-content__inner {
+    background-image: url("../img/inner11.png");
+    background-size: 102%;
+    background-position: center;
 }
+
 .page-main__content {
     margin: auto;
     width: 90%;
@@ -38,48 +42,48 @@
 }
 
 .content-news {
-    transform: translate(-8.33%,0%);
+    transform: translate(-8.33%, 0%);
     margin: auto;
     text-align: center;
     width: 50%;
 }
-.content-news__header{
+
+.content-news__header {
     width: 45%;
     margin: auto;
     padding: 10px 0 50px 0;
-    background:
-    linear-gradient(to top right, rgba(255,255,255,0) 50%, #ffa500 50%) no-repeat top left/50.1% 100%,
-    linear-gradient(to top left, rgba(255,255,255,0) 50%, #ffa500 50%) no-repeat top right/50.1% 100%;
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #ffa500 50%) no-repeat top left/50.1% 100%, linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #ffa500 50%) no-repeat top right/50.1% 100%;
 }
 
 .content-contents {
-    transform: translate(8.33%,0%);
+    transform: translate(8.33%, 0%);
     text-align: center;
     width: 50%;
 }
-.content-contents__header{
+
+.content-contents__header {
     width: 45%;
     margin: auto;
     padding: 10px 0 50px 0;
-    background:
-      linear-gradient(to top right, rgba(255,255,255,0) 50%, #ffa500 50%) no-repeat top left/50.1% 100%,
-      linear-gradient(to top left, rgba(255,255,255,0) 50%, #ffa500 50%) no-repeat top right/50.1% 100%;
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #ffa500 50%) no-repeat top left/50.1% 100%, linear-gradient(to top left, rgba(255, 255, 255, 0) 50%, #ffa500 50%) no-repeat top right/50.1% 100%;
 }
-.news div{
+
+.news div {
     background-color: rgba(255, 255, 255, 0.85);
     text-align: left;
     margin: 15px 30px;
     border-bottom: 1px solid rgb(141, 141, 141);
     border-top: 1px solid rgb(141, 141, 141);
 }
-.ccc div{
+
+.ccc div {
     background-color: rgba(255, 255, 255, 0.85);
     text-align: left;
     margin: 15px 30px;
     border-bottom: 1px solid rgb(141, 141, 141);
     border-top: 1px solid rgb(141, 141, 141);
 }
-.news div p,
-.ccc div p{
+
+.news div p, .ccc div p {
     margin: 0 10px;
 }
