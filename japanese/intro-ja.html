@@ -2,106 +2,158 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/style-ja.css">
-    <title>学校紹介</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/style-ja.css">
+  <link rel="stylesheet" href="../css/intro.css">
+  <title>学校紹介</title>
 </head>
 
 <body>
-    <!--ヘッダー-->
-    <header class="page-header">
-        <div class="page-header__SchoolMark">
-            <div class="SchoolMark__logo">
-                <img src="../img/SchoolMark2.png" alt="SchoolMark">
-            </div>
-        </div>
-        <div class="page-header__lang">
-            <button class="lang-EN" type="button"onclick="en()">　</button>
-            <button class="lang-JP" type="button"onclick="ja()">　</button>
-            <button class="lang-FR" type="button"onclick="fr()">　</button>
-        </div>
-        <nav class="page-header__menu">
-            <ol>
-                <li class="menu-index menu"id="header-menu-index"><a href="index-ja.html">ホーム</a></li>
-                <li class="menu-intro menu"id="header-menu-intro"><a href="intro-ja.html">学校紹介</a></li>
-                <li class="menu-content menu"id="header-menu-content"><a href="content-ja.html">教育内容</a></li>
-                <li class="menu-facility menu"id="header-menu-facility"><a href="facility-ja.html">学校設備</a></li>
-                <li class="menu-ex menu"id="header-menu-ex"><a href="entranceExamination-ja.html">入試</a></li>
-                <li class="menu-access menu"id="header-menu-access"><a href="access-ja.html">アクセス</a></li>
-                <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-ja.html">お問い合わせ</a></li>
-            </ol>
-        </nav>
-    </header>
-    <!--main-->
-    <main>
-        <h1>学校紹介</h1>
-        <h2>本校の概要</h2>
-        <p>本校では国際的に活躍でき、世界に通用するようなマネジメント能力を持つ人材の育成に 力を入れています。また人種や門地に問わず学習意欲が熱心な若者を応援します。
-        </p>
-        <h2>マネジメント能力の育成</h2>
-        <p>本校では豊かなマネジメント能力を鍛えるために独自のカリキュラムや積極的な実習を行います。 実践的な力を養い、世界に通用するような水準まであなたの能力を引き上げます。
-        </p>
-        <h2>インターナショナルスクール</h2>
-        <p>私たちは国際的な学生を教育することを目指します。 普段から英語に触れ、様々な人種、特に日本人とフランス人とが同じ空間で勉学をともにします。 早くから多国籍な人種がいる環境があることで刺激の多い3年間を過ごすことが出来ます。
-        </p>
-        <h2>生徒内訳</h2>
-        <table>
-            <tbody>
-                <tr>
-                    <td></td>
-                    <td>男子生徒</td>
-                    <td>女子生徒</td>
-                </tr>
-                <tr>
-                    <td>1年生</td>
-                    <td>55人</td>
-                    <td>47人</td>
-                </tr>
-                <tr>
-                    <td>2年生</td>
-                    <td>52人</td>
-                    <td>44人</td>
-                </tr>
-                <tr>
-                    <td>3年生</td>
-                    <td>50人</td>
-                    <td>49人</td>
-                </tr>
-            </tbody>
-        </table>
+  <!--ヘッダー-->
+  <header class="page-header">
+    <div class="page-header__SchoolMark">
+      <div class="SchoolMark__logo">
+        <img src="../img/SchoolMark2.png" alt="SchoolMark">
+      </div>
+    </div>
+    <div class="page-header__lang">
+      <button class="lang-EN" type="button"onclick="en()">　</button>
+      <button class="lang-JP" type="button"onclick="ja()">　</button>
+      <button class="lang-FR" type="button"onclick="fr()">　</button>
+    </div>
+    <nav class="page-header__menu">
+      <ol>
+        <li class="menu-index menu"id="header-menu-index"><a href="index-ja.html">ホーム</a></li>
+        <li class="menu-intro menu"id="header-menu-intro"><a href="intro-ja.html">学校紹介</a></li>
+        <li class="menu-content menu"id="header-menu-content"><a href="content-ja.html">教育内容</a></li>
+        <li class="menu-facility menu"id="header-menu-facility"><a href="facility-ja.html">学校設備</a></li>
+        <li class="menu-ex menu"id="header-menu-ex"><a href="entranceExamination-ja.html">入試</a></li>
+        <li class="menu-access menu"id="header-menu-access"><a href="access-ja.html">アクセス</a></li>
+        <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-ja.html">お問い合わせ</a></li>
+      </ol>
+    </nav>
+  </header>
+  <!--main-->
+  <main>
+    <div class="page-main__header">
+      <h1 class="page-submain__header">学校紹介</h1>
+    </div>
+    <div class="history">
+      <div class="contents-head">
         <h2>学校遍歴</h2>
-          <p>本校はロンドン日本人スクールを改装して誕生しました。それまでは日本人のための学校でしたが、
-            国際的な人材の育成を目指してインターナショナルスクールとして10年前に生まれ変わりました。</p>
-        <h2>クラブ</h2>
-          <p>本校ではクラブ活動にも力を入れており、以下のクラブ活動を実施しています。高校3年間の素敵な青春の日々を約束します</p>
-          <h3>運動系</h3>
-            <p>・サッカー(男)(女)</p>
-            <p>・クリケット(男)(女)</p>
-            <p>・バスケットボール(男)(女)</p>
-          <h3>文化系</h3>
-            <p>・吹奏楽部</p>
-            <p>・合唱団</p>
-            <p>・世界文化研究会</p>
-            <p>・ボランティア</p>
+      </div>
+      <p>本校はロンドン日本人スクールを改装して誕生しました。<br>
+        それまでは日本人のための学校でしたが、<br>
+        国際的な人材の育成を目指してインターナショナルスクールとして10年前に生まれ変わりました。
+      </p>
+    </div>
+
+    <div class="overview">
+      <div class="contents-head">
+        <h2>本学の概要</h2>
+      </div>
+      <p>本学では国際的に活躍でき、世界に通用するようなマネジメント能力を持つ人材の育成に力を入れています。</br>
+        また人種や門地に問わず学習意欲が熱心な若者を応援します。
+      </p>
+    </div>
+
+    <div class="upbringing">
+      <div class="contents-head">
+        <h2>マネジメント能力の育成</h2>
+      </div>
+      <p>本学では豊かなマネジメント能力を鍛えるために独自のカリキュラムや積極的な実習を行います。 </br>
+        実践的な力を養い、世界に通用するような水準まであなたの能力を引き上げます。
+      </p>
+    </div>
+
+    <div class="international">
+      <div class="contents-head">
+        <h2>インターナショナルスクール</h2>
+      </div>
+      <p>私たちは国際的な学生を教育することを目指します。 <br>
+        普段から英語に触れ、様々な人種、特に日本人とフランス人とが同じ空間で勉学をともにします。 <br>
+        早くから多国籍な人種がいる環境があることで刺激の多い3年間を過ごすことが出来ます。
+      </p>
+    </div>
+
+    <div class="student">
+      <div class="contents-head">
+        <h2>生徒内訳</h2>
+      </div>
+      <table class="table-student">
+        <tbody>
+          <tr class="table-head">
+            <td>学年</td>
+            <td>男子生徒</td>
+            <td>女子生徒</td>
+          </tr>
+          <tr>
+            <td class="table-grade">1年生</td>
+            <td class="table-number">55人</td>
+            <td class="table-number">47人</td>
+          </tr>
+          <tr>
+            <td class="table-grade">2年生</td>
+            <td class="table-number">52人</td>
+            <td class="table-number">44人</td>
+          </tr>
+          <tr>
+            <td class="table-grade">3年生</td>
+            <td class="table-number">50人</td>
+            <td class="table-number">49人</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="club">
+      <div class="sports-picture">
+        <div class="non-sports-picture">
+          <div class="contents-head">
+            <h2>クラブ</h2>
+          </div>
+          <p>本校ではクラブ活動にも力を入れており、以下のクラブ活動を実施しています。<br>
+            高校3年間の素敵な青春の日々を約束します。
+          </p>
+          <h3 class="club-head">運動系</h3>
+          <p>サッカー(男)(女)</p>
+          <p>クリケット(男)(女)</p>
+          <p>バスケットボール(男)(女)</p>
+          <h3 class="club-head">文化系</h3>
+          <p>吹奏楽部</p>
+          <p>合唱団</p>
+          <p>世界文化研究会</p>
+          <p>ボランティア</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="event">
+      <div class="contents-head">
         <h2>年中行事</h2>
-          <p>・入学式(9月)</p>
-          <p>・体育祭(10月)</p>
-          <p>・留学生との交流会(12月)</p>
-          <p>・中間テスト(1月)</p>
-          <p>・遠足(3月)</p>
-          <p>・ホームカミングデー(3月)</p>
-          <p>・学期末テスト(5月)</p>
-          <p>・卒業式(6月)</p>
-          <p>・長期休み(6月から9月)</p>
-          <p>・海外ホームステイ(7月)</p>
-    </main>
+      </div>
+      <p>入学式(9月)</p>
+      <p>体育祭(10月)</p>
+      <p>留学生との交流会(12月)</p>
+      <p>中間テスト(1月)</p>
+      <p>遠足(3月)</p>
+      <p>ホームカミングデー(3月)</p>
+      <p>学期末テスト(5月)</p>
+      <p>卒業式(6月)</p>
+      <p>長期休み(6月から9月)</p>
+      <p>海外ホームステイ(7月)</p>
+    </div>
 
-    <!--フッター-->
-    <footer>
+  </main>
 
-    </footer>
+  <!--フッター-->
+  <footer>
+
+  </footer>
 </body>
 <script src="../header.js"></script>
+<script src="../effct-fade.js"></script>
 </html>

@@ -1,0 +1,124 @@
+.page-main__header{
+  padding-top: 25;
+  padding-bottom: 25;
+  background-image: url("../img/facility/office-black.png");
+  background-size:cover;
+  background-position: center;
+  margin-left: -10;
+  border-bottom: solid 10px orange;
+}
+
+.page-submain__header{
+  text-align:center;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 25 0;
+  margin-left: 25;
+  margin-right: 25;
+  font-weight: bold;
+  border: solid 2px #ffffff;
+}
+
+.history{
+  background:rgb(255, 246, 235);;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.overview{
+  background:#ffffff;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.upbringing{
+  background: rgb(255, 246, 235);
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.international{
+  background:#ffffff;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.student{
+  background: rgb(255, 246, 235);
+  text-align:center;
+  margin:-10;
+  padding-top: 20;
+  padding-bottom: 50;
+  left: 50%;
+}
+.table-student{
+  width: 50%;
+  text-align: center;
+  border-collapse:collapse;
+  border: 1px solid;
+  margin: auto;
+}
+.table-head{
+  background: #c9ffd8;
+  border-collapse:collapse;
+  border: 1px solid;
+}
+.table-head td{
+  border-collapse:collapse;
+  border: 1px solid;
+}
+.table-grade{
+  background: #c9ffd8;
+  border-collapse:collapse;
+  border: 1px solid;
+}
+.table-number{
+  background: #ffffff;
+  border-collapse:collapse;
+  border: 1px solid;
+}
+
+.club{
+  /*background: #ffffff;*/
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+.club-head{
+  padding-top: 20;
+}
+.sports-picture{
+  background-image: url("../img/content/baseball.jpg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: top 250px left 40px;
+}
+.non-sports-picture{
+  background-image: url("../img/content/band.jpg");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: bottom 50px right 40px;
+}
+
+.event{
+  background:rgb(255, 246, 235);;
+  text-align:center;
+  margin-left: -10;
+  padding-top: 20;
+  padding-bottom: 50;
+}
+
+.contents-head{
+  font-size: 90%;
+  padding-bottom: 40;
+  padding-top: 30;
+}

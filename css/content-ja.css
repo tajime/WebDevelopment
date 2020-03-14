@@ -1,8 +1,11 @@
-.inner{
-    background-color: rgb(255, 255, 226);
+.main-inner{
+    background-image: url("../img/inner11.png");
+    background-size: 102%;
+    background-position: center;
+    background-attachment: fixed;
 }
 .page-main__content{
-    width: 98%;
+    width: 90%;
     margin: auto;
 }
 .page-main__header {
@@ -31,14 +34,9 @@
   }
   
   .intro-section__block > * {
-    width: 50%;
+    width: 45%;
   }
 
-/* 偶数番目の場合、横並びを反転 */
-
-.intro-section__block:nth-child(even) {
-    flex-direction: row-reverse;
-}
 
 /* 各画像を設定 */
 
@@ -68,6 +66,7 @@
 /* 画像エリア */
 
 .intro-section__img-area {
+    margin: 30px 0;
     background: center center no-repeat;
     background-size: cover;
 }
@@ -76,14 +75,18 @@
 
 .intro-section__txt-area {
     box-sizing: border-box;
-    color: #000;
-    padding: 20px;
+    padding: 40px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 0.7);
 }
 
 .intro-section__contact {
     padding: 100px 0;
 }
-
+.gairyaku{
+    text-align: center;
+}
 .zu {
-    width: 100%;
+    width: 80%;
 }
