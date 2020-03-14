@@ -92,10 +92,10 @@
 }
 
 /*リンクについて*/
-a{
-  text-decoration: underline;
-  color:#4169e1
+a.link{
+    color: blue;
+    text-decoration:underline;
 }
-a:hover{
-  color : #ff7043;
+a.link:hover {
+    color:red;
 }
