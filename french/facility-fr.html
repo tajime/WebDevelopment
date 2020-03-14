@@ -2,83 +2,144 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/style-ja.css">
-    <title>Matériel scolaire</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/style-ja.css">
+  <link rel="stylesheet" href="../css/facility-ja.css">
+  <title>Matériel scolaire</title>
 </head>
 
 <body>
-    <!--ヘッダー-->
-    <header class="page-header">
-        <div class="page-header__SchoolMark">
-            <div class="SchoolMark__logo">
-                <img src="../img/SchoolMark2.png" alt="SchoolMark">
-            </div>
+  <!--ヘッダー-->
+  <header class="page-header">
+    <div class="page-header__SchoolMark">
+      <div class="SchoolMark__logo">
+        <img src="../img/SchoolMark2.png" alt="SchoolMark">
+      </div>
+    </div>
+    <div class="page-header__lang">
+      <button class="lang-EN" type="button" onclick="en()">　</button>
+      <button class="lang-JP" type="button" onclick="ja()">　</button>
+      <button class="lang-FR" type="button" onclick="fr()">　</button>
+    </div>
+    <nav class="page-header__menu">
+      <ol>
+        <li class="menu-index menu" id="header-menu-index"><a href="index-fr.html">Accueil</a></li>
+        <li class="menu-intro menu" id="header-menu-intro"><a href="intro-fr.html">Introduction à l'école</a></li>
+        <li class="menu-content menu" id="header-menu-content"><a href="content-fr.html">Contenu pédagogique</a></li>
+        <li class="menu-facility menu" id="header-menu-facility"><a href="facility-fr.html">Matériel scolaire</a></li>
+        <li class="menu-ex menu" id="header-menu-ex"><a href="entranceExamination-fr.html">Examen d'entrée</a></li>
+        <li class="menu-access menu" id="header-menu-access"><a href="access-fr.html">Accès</a></li>
+        <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-fr.html">Enquête</a></li>
+      </ol>
+    </nav>
+  </header>
+  <!--メイン-->
+  <main class="page-main">
+    <div class="main-inner">
+      <div class="main-header__inner">
+        <h1 class="main-header">Installations</h1>
+      </div>
+      <div class="intro-section__content">
+        <!--中庭-->
+        <div class="intro-section__block" id="content1">
+          <div class="intro-section__img-area"></div>
+          <div class="intro-section__txt-area">
+            <h2>Cour</h2>
+            <p>
+              Ceci est la cour vantant de notre école. La cour a été conçue par Gar-den, un jardinier de renommée
+              mondiale. En journée ensoleillée,
+              la lumière du soleil tombe et manger dans une atmosphère calme est un plat de classe mondiale. Dans ce
+              jardin, concert de la fière fanfare et chorale de l'école
+              a lieu une fois par mois. Vous pouvez également prendre un déjeuner élégant tout en profitant des
+              performances de la fanfare et du chœur.
+              Il semble que certains étudiants ont décidé de s'inscrire pour un merveilleux déjeuner.
+            </p>
+          </div>
         </div>
-        <div class="page-header__lang">
-            <button class="lang-EN" type="button" onclick="en()">　</button>
-            <button class="lang-JP" type="button" onclick="ja()">　</button>
-            <button class="lang-FR" type="button" onclick="fr()">　</button>
+        <!--食堂-->
+        <div class="intro-section__block" id="content2">
+          <div class="intro-section__img-area"></div>
+          <div class="intro-section__txt-area">
+            <h2>Cantine</h2>
+            <p>
+              Notre école a également une cantine. Des plats japonais, occidentaux et chinois sont préparés chaque jour
+              afin que
+              de nombreux étudiants puissent en profiter.
+              Le prix est d'environ 4 dollars et il est abordable. Nous avons un diététicien dédié pour "bon marché et
+              délicieux".
+              De plus, il existe un passeport annuel, qui ne coûte que 3,8 dollars par repas, et environ la moitié des
+              étudiants
+              l'utilisent.
+              De plus, il y a aussi des achats à l'arrière de la cafétéria, alors utilisez-le lorsque vous manquez de
+              temps ou
+              si vous avez faim.
+            </p>
+          </div>
         </div>
-        <nav class="page-header__menu">
-            <ol>
-                <li class="menu-index menu" id="header-menu-index"><a href="index-fr.html">Accueil</a></li>
-                <li class="menu-intro menu" id="header-menu-intro"><a href="intro-fr.html">Introduction à l'école</a></li>
-                <li class="menu-content menu" id="header-menu-content"><a href="content-fr.html">Contenu pédagogique</a></li>
-                <li class="menu-facility menu" id="header-menu-facility"><a href="facility-fr.html">Matériel scolaire</a></li>
-                <li class="menu-ex menu" id="header-menu-ex"><a href="entranceExamination-fr.html">Examen d'entrée</a></li>
-                <li class="menu-access menu" id="header-menu-access"><a href="access-fr.html">Accès</a></li>
-                <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-fr.html">Enquête</a></li>
-            </ol>
-        </nav>
-    </header>
-    <!--メイン-->
-    <main class="page-main">
-      <h1>Installations</h1>
-      <p>
-        <h2><u>Cour</u></h2>
-        <img src="../img/facility/garden.jpg" alt="中庭">
-        Ceci est la cour vantant de notre école. La cour a été conçue par Gar-den, un jardinier de renommée mondiale. En journée ensoleillée,
-          la lumière du soleil tombe et manger dans une atmosphère calme est un plat de classe mondiale. Dans ce jardin, concert de la fière fanfare et chorale de l'école
-          a lieu une fois par mois. Vous pouvez également prendre un déjeuner élégant tout en profitant des performances de la fanfare et du chœur.
-          Il semble que certains étudiants ont décidé de s'inscrire pour un merveilleux déjeuner.
-      </p>
-      <p>
-        <h2><u>Cantine</u></h2>
-        <img src="../img/facility/meal.jpg" alt="食堂">
-        Notre école a également une cantine. Des plats japonais, occidentaux et chinois sont préparés chaque jour afin que de nombreux étudiants puissent en profiter.
-          Le prix est d'environ 4 dollars et il est abordable. Nous avons un diététicien dédié pour "bon marché et délicieux".
-          De plus, il existe un passeport annuel, qui ne coûte que 3,8 dollars par repas, et environ la moitié des étudiants l'utilisent.
-          De plus, il y a aussi des achats à l'arrière de la cafétéria, alors utilisez-le lorsque vous manquez de temps ou si vous avez faim.
-      </p>
-      <p>
-        <h2><u>Salle de sieste</u></h2>
-        <img src="../img/facility/sleep.png" alt="仮眠室">
-        Notre école dispose également d'une salle de sieste. Faire une sieste s'est avéré très efficace pour les activités de l'après-midi,
-          et notre école a décidé de l'intégrer cette année. Une gestion minutieuse de la climatisation et une gestion de l'hygiène vous permettent de faire une sieste confortable.
-          L'introduction de la salle de sieste a été très réussie et a reçu des commentaires positifs de nombreux élèves et parents.
-          Parfois, la salle de sieste est pleine et il n'y a pas assez d'espace, donc nous envisageons actuellement d'agrandir la salle de sieste.
-      </p>
-      <p>
-        <h2><u>Salle PC</u></h2>
-        <img src="../img/facility/office.png" alt="パソコン室">
-        Comme le montre le contenu éducatif, nous avons un cours de programmation dans notre école. Lorsque vous entendez la salle PC,
-          comme vous pouvez l'imaginer, mais notre école dispose d'une salle informatique ouverte comme celle de la photo, ce qui stimule la créativité des élèves.
-          Dans cette salle PC, nous avons préparé le dernier ordinateur personnel. Par conséquent, ne vous inquiétez pas de préparer votre propre PC.
-      </p>
-      <p>
-        <h2><u>Bibliothèque</u></h2>
-        <img src="../img/facility/lib.jpg" alt="図書館">
-        Notre bibliothèque est reconnue comme l'une des plus belles bibliothèques de Londres. Pour cette raison, nous louons à l'extérieur,
-          et beaucoup de gens visitent cette bibliothèque. Étonnamment, cette bibliothèque compte 100 000 livres. Bien sûr, le contenu est substantiel,
-          et nous avons tous les genres de romans, livres d'utilité, livres de référence aux magazines. A la recherche d'un merveilleux livre, rencontre avec une personne,
-          veuillez essayer d'utiliser cette bibliothèque. C'est agréable de trouver l'un de vos livres préférés.
-      </p>
-    </main>
-    <!--フッター-->
-    <footer class="page-footer"></footer>
+        <!--仮眠室-->
+        <div class="intro-section__block" id="content3">
+          <div class="intro-section__img-area"></div>
+          <div class="intro-section__txt-area">
+            <h2>Salle de sieste</h2>
+            <p>
+              Notre école dispose également d'une salle de sieste. Faire une sieste s'est avéré très efficace pour les
+              activités
+              de l'après-midi,
+              et notre école a décidé de l'intégrer cette année. Une gestion minutieuse de la climatisation et une
+              gestion de
+              l'hygiène vous permettent de faire une sieste confortable.
+              L'introduction de la salle de sieste a été très réussie et a reçu des commentaires positifs de nombreux
+              élèves et
+              parents.
+              Parfois, la salle de sieste est pleine et il n'y a pas assez d'espace, donc nous envisageons actuellement
+              d'agrandir la salle de sieste.
+            </p>
+          </div>
+        </div>
+        <!--パソコン室-->
+        <div class="intro-section__block" id="content4">
+          <div class="intro-section__img-area"></div>
+          <div class="intro-section__txt-area">
+            <h2>Salle PC</h2>
+            <p>
+              Comme le montre le contenu éducatif, nous avons un cours de programmation dans notre école. Lorsque vous
+              entendez
+              la salle PC,
+              comme vous pouvez l'imaginer, mais notre école dispose d'une salle informatique ouverte comme celle de la
+              photo,
+              ce qui stimule la créativité des élèves.
+              Dans cette salle PC, nous avons préparé le dernier ordinateur personnel. Par conséquent, ne vous inquiétez
+              pas de
+              préparer votre propre PC.
+            </p>
+          </div>
+        </div>
+        <!--図書室-->
+        <div class="intro-section__block" id="content5">
+          <div class="intro-section__img-area"></div>
+          <div class="intro-section__txt-area">
+            <h2>Bibliothèque</h2>
+            <p>
+              Notre bibliothèque est reconnue comme l'une des plus belles bibliothèques de Londres. Pour cette raison,
+              nous
+              louons à l'extérieur,
+              et beaucoup de gens visitent cette bibliothèque. Étonnamment, cette bibliothèque compte 100 000 livres.
+              Bien sûr,
+              le contenu est substantiel,
+              et nous avons tous les genres de romans, livres d'utilité, livres de référence aux magazines. A la
+              recherche d'un
+              merveilleux livre, rencontre avec une personne,
+              veuillez essayer d'utiliser cette bibliothèque. C'est agréable de trouver l'un de vos livres préférés.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--フッター-->
+  <footer class="page-footer"></footer>
 </body>
 <script src="../header.js"></script>
 
