@@ -3,42 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/style-ja.css">
     <title>コメント</title>
 </head>
 
 <body>
     <!--ヘッダー-->
     <header class="page-header">
-        <div class="page-header__SchoolMark">
-            <div class="SchoolMark__logo">
-                <img src="../img/SchoolMark2.png" alt="SchoolMark">
-            </div>
-        </div>
-        <div class="page-header__lang">
-            <button class="lang-EN" type="button" onclick="en()">　</button>
-            <button class="lang-JP" type="button" onclick="ja()">　</button>
-            <button class="lang-FR" type="button" onclick="fr()">　</button>
-        </div>
-        <nav class="page-header__menu">
-            <ol>
-                <li class="menu-index menu" id="header-menu-index"><a href="index-ja.html">ホーム</a></li>
-                <li class="menu-intro menu" id="header-menu-intro"><a href="intro-ja.html">学校紹介</a></li>
-                <li class="menu-content menu" id="header-menu-content"><a href="content-ja.html">教育内容</a></li>
-                <li class="menu-facility menu" id="header-menu-facility"><a href="facility-ja.html">学校設備</a></li>
-                <li class="menu-ex menu" id="header-menu-ex"><a href="entranceExamination-ja.html">入試</a></li>
-                <li class="menu-access menu" id="header-menu-access"><a href="access-ja.html">アクセス</a></li>
-                <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-ja.html">お問い合わせ</a></li>
-                <li class="menu-comment menu" id="header-menu-comment"><a href="comment-ja.html">コメント</a></li>
-            </ol>
-        </nav>
     </header>
     <!--メイン-->
     <main class="page-main">
         <div class="form">
-            <form name="form" action="content-ja.html" method="POST">
+            <form name="form" action="" method="post">
                 <div class="form_nickname">
                     <label for="nickname">NickName：</label>
                     <input type="text" required id="nickname" name="user_nickname" placeholder="ロンドン　太郎">
@@ -48,7 +23,7 @@
                     <textarea id="comment" required name="user_comment" placeholder="Please write freely"></textarea>
                 </div>
                 <div class="form_button">
-                    <input type="submit" id="btn" value="Send Comment" onclick="sendComment()">
+                    <input type="button" id="btn" value="Send Comment" onclick="sendComment()">
                     <script type="text/javascript">
                         function sendComment() {
                             var nickname = document.getElementById('nickname').value;
@@ -60,18 +35,35 @@
                             if (nickname == "" || comment == "") {
                                 var message = String("NickNameとCommentは必須項目です。");
                             } else {
+                                var date = new Date();
                                 var message = String("name : " + nickname + "\n---comment---\n" + comment + "\n----------------\n" + "\n以上の内容で送信しました。");
+                                var sendMessage = String("<br>name : " + nickname + "<br>comment :" + comment + "<br>");
                             }
                             alert(message);
+                            Update(date, sendMessage);
+                        }
+
+                        function Update(date, message) {
+                            console.log("ssss");
+                            var stm = document.getElementById('update');
+                            stm.innerHTML = String(stm.innerHTML + "<br>" + date + message + "<hr>");
                         }
                     </script>
                 </div>
             </form>
+            <br>
+            <hr>
+            <br>
+            <div>
+                <h2>コメント欄</h2>
+            </div>
+            <div>
+                <div id="update">なにか書き込んでください！<br></div>
+            </div>
         </div>
     </main>
     <!--フッター-->
     <footer class="page-footer"></footer>
 </body>
-<script src="../header.js"></script>
 
 </html>
