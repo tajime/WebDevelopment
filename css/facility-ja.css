@@ -1,0 +1,79 @@
+.main-header__inner {
+    padding: 25px 0;
+    background-image: url("../img/facility/facility1.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: solid 10px orange;
+}
+
+.main-header {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 25px 0;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: bold;
+    border: solid 2px #ffffff;
+}
+
+.main-inner {
+    background-image: url("../img/inner11.png");
+    background-size: 102%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.intro-section__block {
+    display: flex;
+    height: 400px;
+  }
+  
+  .intro-section__block > * {
+    width: 45%;
+  }
+
+
+/* 各画像を設定 */
+
+.intro-section__block:nth-child(1) .intro-section__img-area {
+    background-image: url("../img/facility/garden.jpg");
+}
+
+.intro-section__block:nth-child(2) .intro-section__img-area {
+    background-image: url("../img/facility/meal.jpg");
+}
+
+.intro-section__block:nth-child(3) .intro-section__img-area {
+    background-image: url("../img/facility/sleep.png");
+}
+.intro-section__block:nth-child(4) .intro-section__img-area {
+    background-image: url("../img/facility/office.png");
+}
+
+.intro-section__block:nth-child(5) .intro-section__img-area {
+    background-image: url("../img/facility/lib.jpg");
+}
+
+
+/* 画像エリア */
+
+.intro-section__img-area {
+    margin: 30px 0;
+    background: center center no-repeat;
+    background-size: cover;
+}
+
+/* 文章エリア */
+
+.intro-section__txt-area {
+    box-sizing: border-box;
+    padding: 40px;
+    margin: auto 25px;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 0.7);
+}
+.intro-section__content{
+    width: 97%;
+    margin: auto;
+}
