@@ -33,6 +33,7 @@
     background-image: url("../img/inner11.png");
     background-size: 102%;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .page-main__content {
