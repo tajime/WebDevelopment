@@ -1,5 +1,4 @@
 .page-header {
-    word-break: break-all;
     background-color: rgb(255, 246, 235);
     text-align: center;
     position: fixed;
@@ -52,16 +51,14 @@
 
 .menu {
     /*ボタンの幅*/
-    margin: 30px 0px;
+    margin: 20px 0px;
+    padding: 10px 0px;
     border-radius: 8px;
     font-size: 16px;
-    padding: 10px 0px;
     text-decoration: underline;
-    text-align-last: justify;
 }
 .menu a{
     text-align: center;
-    padding: 0px 20px;
 }
 
 .menu a:hover {
