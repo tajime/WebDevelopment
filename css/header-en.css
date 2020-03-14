@@ -1,5 +1,4 @@
 .page-header {
-    word-break: break-all;
     background-color: rgb(255, 246, 235);
     text-align: center;
     position: fixed;
@@ -57,11 +56,9 @@
     font-size: 16px;
     line-height: 37px;
     text-decoration: underline;
-    text-align-last: justify;
 }
 .menu a{
     text-align: center;
-    padding: 0px 20px;
 }
 
 .menu a:hover {
