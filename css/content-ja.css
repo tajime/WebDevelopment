@@ -5,7 +5,7 @@
     background-attachment: fixed;
 }
 .page-main__content{
-    width: 90%;
+    width: 97%;
     margin: auto;
 }
 .page-main__header {
@@ -76,7 +76,7 @@
 .intro-section__txt-area {
     box-sizing: border-box;
     padding: 40px;
-    margin: auto;
+    margin: auto 25px;
     border-radius: 10px;
     background-color: hsla(0, 0%, 100%, 0.7);
 }
