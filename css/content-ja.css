@@ -76,6 +76,9 @@
 .intro-section__txt-area {
     box-sizing: border-box;
     padding: 40px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsla(0, 0%, 100%, 0.7);
 }
 
 .intro-section__contact {
