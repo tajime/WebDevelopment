@@ -47,15 +47,15 @@
                     <form name="form" action="" method="post">
                         <div class="form-up__contents">
                             <div class="form_nickname">
-                                <label for="nickname">ニックネーム：</label>
-                                <input type="text" required id="nickname" name="user_nickname" placeholder="ロンドン　太郎">
+                                <label for="nickname">Nickname：</label>
+                                <input type="text" required id="nickname" name="user_nickname" placeholder="Harry London">
                             </div>
                             <div class="form_comment">
-                                <label for="comment">コメント：</label>
-                                <textarea id="comment" required name="user_comment" placeholder="ご自由に書き込んでください"></textarea>
+                                <label for="comment">Comment：</label>
+                                <textarea id="comment" required name="user_comment" placeholder="Please write freely"></textarea>
                             </div>
                             <div class="form_button">
-                                <input type="button" id="btn" value="コメントを送る" onclick="sendComment()">
+                                <input type="button" id="btn" value="Send comment" onclick="sendComment()">
                                 <script type="text/javascript">
                                     function sendComment() {
                                         var nickname = document.getElementById('nickname').value;
@@ -65,16 +65,16 @@
                                         console.log(comment);
                                         -------------------------*/
                                         if (nickname == "" || comment == "") {
-                                            var message = String("NickNameとCommentは必須項目です。");
+                                            var message = String("NickName and Comment are required.");
                                         } else {
                                             var date = new Date();
-                                            var message = String("name : " + nickname + "\n---comment---\n" + comment + "\n----------------\n" + "\n以上の内容で送信しました。");
+                                            var message = String("name : " + nickname + "\n---comment---\n" + comment + "\n----------------\n" + "\nSent with the above contents");
                                             var sendMessage = String("<br>name : " + nickname + "<br>comment :" + comment + "<br>");
                                         }
                                         alert(message);
                                         Update(date, sendMessage);
                                     }
-            
+
                                     function Update(date, message) {
                                         var stm = document.getElementById('update');
                                         stm.innerHTML = String("<br>" + date + message + "<hr>"+stm.innerHTML);
@@ -86,10 +86,10 @@
                 </div>
                 <div class="form-under">
                     <div>
-                        <h2>コメント欄</h2>
+                        <h2>Comment field</h2>
                     </div>
                     <div class="form-under__contents">
-                        <div id="update">なにか書き込んでください！<br></div>
+                        <div id="update">Please write something!<br></div>
                     </div>
                 </div>
             </div>
