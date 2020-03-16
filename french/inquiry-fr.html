@@ -2,95 +2,103 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/header-en.css">
-    <link rel="stylesheet" href="../css/style-fr.css">
-    <title>Enquête</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/header-en.css">
+  <link rel="stylesheet" href="../css/style-fr.css">
+  <link rel="stylesheet" href="../css/inquiry.css">
+  <title>Enquête</title>
 </head>
 
 <body>
-    <!--ヘッダー-->
-    <header class="page-header">
-        <div class="page-header__SchoolMark">
-            <div class="SchoolMark__logo">
-                <img src="../img/SchoolMark2.png" alt="SchoolMark">
+  <!--ヘッダー-->
+  <header class="page-header">
+    <div class="page-header__SchoolMark">
+      <div class="SchoolMark__logo">
+        <img src="../img/SchoolMark2.png" alt="SchoolMark">
+      </div>
+    </div>
+    <div class="page-header__lang">
+      <button class="lang-EN" type="button" onclick="en()">　</button>
+      <button class="lang-JP" type="button" onclick="ja()">　</button>
+      <button class="lang-FR" type="button" onclick="fr()">　</button>
+    </div>
+    <nav class="page-header__menu">
+      <ol>
+        <li class="menu-index menu" id="header-menu-index"><a href="index-fr.html">Accueil</a></li>
+        <li class="menu-intro menu" id="header-menu-intro"><a href="intro-fr.html">Introduction à l'école</a></li>
+        <li class="menu-content menu" id="header-menu-content"><a href="content-fr.html">Contenu pédagogique</a></li>
+        <li class="menu-facility menu" id="header-menu-facility"><a href="facility-fr.html">Matériel scolaire</a></li>
+        <li class="menu-ex menu" id="header-menu-ex"><a href="entranceExamination-fr.html">Examen d'entrée</a></li>
+        <li class="menu-access menu" id="header-menu-access"><a href="access-fr.html">Accès</a></li>
+        <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-fr.html">Enquête</a></li>
+      </ol>
+    </nav>
+  </header>
+  <!--メイン-->
+  <main class="page-main">
+    <div class="main-inner">
+      <div class="margin-left">
+        <div>
+          <div class="page-main__header">
+            <h1 class="page-submain__header">Enquête</h1>
+          </div>
+        </div>
+        <div>
+          <div class="text-top">
+            <p>Si vous êtes intéressé par notre école, n'hésitez pas à nous contacter. Une fois que vous avez entré les informations requises,
+              nous vous ferons parvenir le matériel d'admission de l'école.
+            </p>
+          </div>
+          <div class="text-top">
+            <h2>Numéro de téléphone</h2>
+            <p>☏123-4567-8901</p>
+          </div>
+          <div class="siryo-seikyu-">
+            <h2>Demande de document</h2>
+            <div class="form">
+              <form name="fome1" action="" method="post">
+                <div class="form_name">
+                  <label for="name">Name：</label>
+                  <input type="text" required id="name" name="user_name" placeholder="Jean London">
+                </div>
+                <div class="form_mail">
+                  <label for="email">Email：</label>
+                  <input type="email" required id="email" name="user_email" placeholder="XXXX@YYY.ZZZ">
+                </div>
+                <div class="form_msg">
+                  <label for="msg">Message：</label>
+                  <textarea id="msg" name="user_message" placeholder="Please write freely"></textarea>
+                </div>
+                <div class="form_button">
+                  <input type="button" id="btn" value="Send Message" onclick="sendMessage()">
+                  <script type="text/javascript">
+                  function sendMessage() {
+                    var name = document.getElementById('name').value;
+                    var email = document.getElementById('email').value;
+                    var msg = document.getElementById('msg').value;
+                    /*--デバック用コンソール--
+                    console.log(name);
+                    console.log(email);
+                    console.log(msg);
+                    -------------------------*/
+                    if (name == "" || email == "") {
+                      var message = String("Name and Email are required fields");
+                    } else {
+                      var message = String("name : " + name + "\nEmail : " + email + "\n\n---message---\n" + msg + "\n----------------\n" + "\n以上の内容で送信しました。");
+                    }
+                    alert(message);
+                  }
+                  </script>
+                </div>
+              </form>
             </div>
-        </div>
-        <div class="page-header__lang">
-            <button class="lang-EN" type="button" onclick="en()">　</button>
-            <button class="lang-JP" type="button" onclick="ja()">　</button>
-            <button class="lang-FR" type="button" onclick="fr()">　</button>
-        </div>
-        <nav class="page-header__menu">
-            <ol>
-                <li class="menu-index menu" id="header-menu-index"><a href="index-fr.html">Accueil</a></li>
-                <li class="menu-intro menu" id="header-menu-intro"><a href="intro-fr.html">Introduction à l'école</a></li>
-                <li class="menu-content menu" id="header-menu-content"><a href="content-fr.html">Contenu pédagogique</a></li>
-                <li class="menu-facility menu" id="header-menu-facility"><a href="facility-fr.html">Matériel scolaire</a></li>
-                <li class="menu-ex menu" id="header-menu-ex"><a href="entranceExamination-fr.html">Examen d'entrée</a></li>
-                <li class="menu-access menu" id="header-menu-access"><a href="access-fr.html">Accès</a></li>
-                <li class="menu-inquiry menu" id="header-menu-inquiry"><a href="inquiry-fr.html">Enquête</a></li>
-            </ol>
-        </nav>
-    </header>
-    <!--メイン-->
-    <main class="page-main">
-      <div>
-          <h1>Enquête</h1>
-      </div>
-      <div>
-          <p>Si vous êtes intéressé par notre école, n'hésitez pas à nous contacter. Une fois que vous avez entré les informations requises,
-             nous vous ferons parvenir le matériel d'admission de l'école.</p>
-          <div>
-              <h2>Numéro de téléphone</h2>
-              <p>☏123-4567-8901</p>
           </div>
-          <div>
-              <h2>Demande de document</h2>
-              <div class="form">
-                  <form name="fome1" action="" method="post">
-                      <div class="form_name">
-                          <label for="name">Name：</label>
-                          <input type="text" required id="name" name="user_name" placeholder="Jean London">
-                      </div>
-                      <div class="form_mail">
-                          <label for="email">Email：</label>
-                          <input type="email" required id="email" name="user_email" placeholder="XXXX@YYY.ZZZ">
-                      </div>
-                      <div class="form_msg">
-                          <label for="msg">Message：</label>
-                          <textarea id="msg" name="user_message" placeholder="Please write freely"></textarea>
-                      </div>
-                      <div class="form_button">
-                          <input type="button" id="btn" value="Send Message" onclick="sendMessage()">
-                          <script type="text/javascript">
-                              function sendMessage() {
-                                  var name = document.getElementById('name').value;
-                                  var email = document.getElementById('email').value;
-                                  var msg = document.getElementById('msg').value;
-                                  /*--デバック用コンソール--
-                                  console.log(name);
-                                  console.log(email);
-                                  console.log(msg);
-                                  -------------------------*/
-                                  if (name == "" || email == "") {
-                                      var message = String("Name and Email are required fields");
-                                  } else {
-                                      var message = String("name : " + name + "\nEmail : " + email + "\n\n---message---\n" + msg + "\n----------------\n" + "\n以上の内容で送信しました。");
-                                  }
-                                  alert(message);
-                              }
-                          </script>
-                      </div>
-                  </form>
-              </div>
-          </div>
-      </div>
-    </main>
-    <!--フッター-->
-    <footer class="page-footer"></footer>
-</body>
-<script src="../header.js"></script>
-
-</html>
+        </div>
+      </main>
+      <!--フッター-->
+      <footer class="page-footer"></footer>
+    </body>
+    <script src="../header.js"></script>
+    
+    </html>
