@@ -92,10 +92,10 @@
 }
 
 /*リンクについて*/
-a.link{
+a.content_link{
     color: blue;
     text-decoration:underline;
 }
-a.link:hover {
+a.content_link:hover {
     color:red;
 }
