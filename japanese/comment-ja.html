@@ -40,15 +40,15 @@
         <div class="form">
             <form name="form" action="" method="post">
                 <div class="form_nickname">
-                    <label for="nickname">NickName：</label>
+                    <label for="nickname">ニックネーム：</label>
                     <input type="text" required id="nickname" name="user_nickname" placeholder="ロンドン　太郎">
                 </div>
                 <div class="form_comment">
-                    <label for="comment">Comment：</label>
-                    <textarea id="comment" required name="user_comment" placeholder="Please write freely"></textarea>
+                    <label for="comment">コメント：</label>
+                    <textarea id="comment" required name="user_comment" placeholder="ご自由に書き込んでください"></textarea>
                 </div>
                 <div class="form_button">
-                    <input type="button" id="btn" value="Send Comment" onclick="sendComment()">
+                    <input type="button" id="btn" value="コメントを送る" onclick="sendComment()">
                     <script type="text/javascript">
                         function sendComment() {
                             var nickname = document.getElementById('nickname').value;
