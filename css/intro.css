@@ -1,3 +1,10 @@
+.main-inner{
+  background-image: url("../img/inner11.png");
+  background-size: 102%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .page-main__header{
   padding-top: 25;
   padding-bottom: 25;
@@ -20,7 +27,7 @@
 }
 
 .history{
-  background:rgb(255, 246, 235);;
+  background-color: rgba(255, 235, 199, 0.5);
   text-align:center;
   margin-left: -10;
   padding-top: 20;
@@ -28,7 +35,7 @@
 }
 
 .overview{
-  background:#ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   text-align:center;
   margin-left: -10;
   padding-top: 20;
@@ -36,7 +43,7 @@
 }
 
 .upbringing{
-  background: rgb(255, 246, 235);
+  background-color: rgba(255, 235, 199, 0.5);
   text-align:center;
   margin-left: -10;
   padding-top: 20;
@@ -44,7 +51,7 @@
 }
 
 .international{
-  background:#ffffff;
+  background-color: rgba(255, 255, 255, 0.5);
   text-align:center;
   margin-left: -10;
   padding-top: 20;
@@ -52,7 +59,7 @@
 }
 
 .student{
-  background: rgb(255, 246, 235);
+  background-color: rgba(255, 235, 199, 0.5);
   text-align:center;
   margin:-10;
   padding-top: 20;
@@ -88,6 +95,7 @@
 
 .club{
   /*background: #ffffff;*/
+  background-color: rgba(255, 255, 255, 0.5);
   text-align:center;
   margin-left: -10;
   padding-top: 20;
@@ -110,7 +118,7 @@
 }
 
 .event{
-  background:rgb(255, 246, 235);;
+  background-color: rgba(255, 235, 199, 0.5);
   text-align:center;
   margin-left: -10;
   padding-top: 20;
