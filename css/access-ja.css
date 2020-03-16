@@ -1,0 +1,66 @@
+.main-inner{
+  background-image: url("../img/inner11.png");
+  background-size: 102%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.page-main__header{
+  padding-top: 25;
+  padding-bottom: 25;
+  background-image: url("../img/content/train.jpg");
+  background-size:cover;
+  background-position: 40px;
+  margin-left: -10;
+  border-bottom: solid 10px orange;
+}
+
+.page-submain__header{
+  text-align:center;
+  color: #ffffff;
+  font-size: 1.5em;
+  padding: 25 0;
+  margin-left: 35;
+  margin-right: 25;
+  font-weight: bold;
+  border: solid 2px #ffffff;
+}
+
+.page-top{
+  padding: 0.5em 0;
+  margin: 1em 0;
+  background-color: rgba(255, 235, 199, 0.5);
+  text-align: center;
+  padding-bottom: 40px;
+}
+.page-top_head{
+  padding: 10px;
+}
+
+.London_to_school{
+background-color:
+}
+.airport_to_school{
+
+}
+
+.to_school h3{
+  text-align: center;
+  padding: 20px;
+}
+
+.access{
+  margin-left: 10px;
+}
+.map{
+  margin-left: 10px;
+  background-color: 
+}
+.map h2{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.figure img{
+  width: 70%
+}
