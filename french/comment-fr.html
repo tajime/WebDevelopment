@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header-en.css">
     <link rel="stylesheet" href="../css/style-ja.css">
+    <link rel="stylesheet" href="../css/comment-ja.css">
     <title>Commentaires</title>
 </head>
 
@@ -41,53 +42,57 @@
     </header>
     <!--メイン-->
     <main class="page-main">
-        <div class="form">
-            <form name="form" action="" method="post">
-                <div class="form_nickname">
-                    <label for="nickname">Surnom：</label>
-                    <input type="text" required id="nickname" name="user_nickname" placeholder="Jean Harry">
+        <div class="main-inner">
+            <div class="form">
+                <div class="form-up">
+                    <form name="form" action="" method="post">
+                        <div class="form-up__contents">
+                            <div class="form_nickname">
+                                <label for="nickname">ニックネーム：</label>
+                                <input type="text" required id="nickname" name="user_nickname" placeholder="ロンドン　太郎">
+                            </div>
+                            <div class="form_comment">
+                                <label for="comment">コメント：</label>
+                                <textarea id="comment" required name="user_comment" placeholder="ご自由に書き込んでください"></textarea>
+                            </div>
+                            <div class="form_button">
+                                <input type="button" id="btn" value="コメントを送る" onclick="sendComment()">
+                                <script type="text/javascript">
+                                    function sendComment() {
+                                        var nickname = document.getElementById('nickname').value;
+                                        var comment = document.getElementById('comment').value;
+                                        /*--デバック用コンソール----
+                                        console.log(nickname);
+                                        console.log(comment);
+                                        -------------------------*/
+                                        if (nickname == "" || comment == "") {
+                                            var message = String("NickNameとCommentは必須項目です。");
+                                        } else {
+                                            var date = new Date();
+                                            var message = String("name : " + nickname + "\n---comment---\n" + comment + "\n----------------\n" + "\n以上の内容で送信しました。");
+                                            var sendMessage = String("<br>name : " + nickname + "<br>comment :" + comment + "<br>");
+                                        }
+                                        alert(message);
+                                        Update(date, sendMessage);
+                                    }
+            
+                                    function Update(date, message) {
+                                        var stm = document.getElementById('update');
+                                        stm.innerHTML = String("<br>" + date + message + "<hr>"+stm.innerHTML);
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <div class="form_comment">
-                    <label for="comment">Commentaire：</label>
-                    <textarea id="comment" required name="user_comment" placeholder="Veuillez écrire librement"></textarea>
+                <div class="form-under">
+                    <div>
+                        <h2>コメント欄</h2>
+                    </div>
+                    <div class="form-under__contents">
+                        <div id="update">なにか書き込んでください！<br></div>
+                    </div>
                 </div>
-                <div class="form_button">
-                    <input type="button" id="btn" value="Envoyer un commentaire" onclick="sendComment()">
-                    <script type="text/javascript">
-                        function sendComment() {
-                            var nickname = document.getElementById('nickname').value;
-                            var comment = document.getElementById('comment').value;
-                            /*--デバック用コンソール----
-                            console.log(nickname);
-                            console.log(comment);
-                            -------------------------*/
-                            if (nickname == "" || comment == "") {
-                                var message = String("NickName et Comment sont des champs obligatoires.");
-                            } else {
-                                var date = new Date();
-                                var message = String("name : " + nickname + "\n---comment---\n" + comment + "\n----------------\n" + "\nEnvoyé avec le contenu ci-dessus.");
-                                var sendMessage = String("<br>name : " + nickname + "<br>comment :" + comment + "<br>");
-                            }
-                            alert(message);
-                            Update(date, sendMessage);
-                        }
-
-                        function Update(date, message) {
-                            console.log("ssss");
-                            var stm = document.getElementById('update');
-                            stm.innerHTML = String(stm.innerHTML + "<br>" + date + message + "<hr>");
-                        }
-                    </script>
-                </div>
-            </form>
-            <br>
-            <hr>
-            <br>
-            <div>
-                <h2>Champ de commentaire</h2>
-            </div>
-            <div>
-                <div id="update">Veuillez écrire quelque chose!<br></div>
             </div>
         </div>
     </main>

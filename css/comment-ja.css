@@ -1,0 +1,25 @@
+.main-inner{
+    height: 100%;
+    background-image: url("../img/inner11.png");
+    background-size: 102%;
+    background-position: center;
+    background-attachment: fixed;
+}
+.form-up{
+    background-color: blanchedalmond;
+    padding-top: 20px;
+    padding-bottom:  20px;
+    margin-bottom: 20px;
+    border-bottom: 5px solid orange;
+}
+.form-up__contents div{
+    margin-left: 10px;
+}
+.form-under{
+    width: 95%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.form-under__contents{
+    word-break: break-all;
+}
