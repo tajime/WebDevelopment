@@ -32,7 +32,7 @@
     display: flex;
     height: 400px;
   }
-  
+
   .intro-section__block > * {
     width: 45%;
   }
@@ -89,4 +89,13 @@
 }
 .zu {
     width: 80%;
+}
+
+/*リンクについて*/
+a.link{
+    color: blue;
+    text-decoration:underline;
+}
+a.link:hover {
+    color:red;
 }
